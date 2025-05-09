@@ -2,7 +2,7 @@ const { default: mongoose } = require("mongoose");
 
 
 const db=()=>{
-    mongoose.connect('mongodb://localhost:27017/',{autoIndex: true}).then(()=>{
+    mongoose.connect('mongodb://localhost:27017/SocialMedia',{autoIndex: true}).then(()=>{
         console.log("Connected to mongoose");
     })
     .catch((e)=>{
